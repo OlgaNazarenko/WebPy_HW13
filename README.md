@@ -7,7 +7,7 @@ the virtual environment, you need to run the command:
       poetry shell
 
 ### Part 1:
-REST API for storing and managing contacts [^1]. Run the following command to start the FastAPI server in folder *REST*:
+REST API for storing and managing contacts [^1]. Run the following command to start the FastAPI server in folder **REST**:
 
       python3 (py) main.py
 
@@ -23,7 +23,7 @@ For this project was done the following:
 
 
 ### Part 2:
-Django project (created site using Django (similar to http://quotes.toscrape.com))[^2]. Run the following command to start the server in folder *quotes*:
+Django project (created site using Django (similar to *http://quotes.toscrape.com*))[^2]. Run the following command to start the server in folder **quotes**:
 
       python3 (py) manage.py runserver
 
