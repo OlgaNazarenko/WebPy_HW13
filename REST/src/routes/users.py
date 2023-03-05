@@ -1,21 +1,3 @@
-# from typing import List
-#
-# import cloudinary
-# import cloudinary.uploader
-# from fastapi import APIRouter, Depends, HTTPException, status, Path, Form, Query, Response, UploadFile, File
-# from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-# from sqlalchemy.orm import Session
-# from pydantic import EmailStr
-# from fastapi_limiter.depends import RateLimiter
-#
-# from src.schemas import UserModel, UserResponse, TokenModel, UserDb
-# from src.repository import users as repository_contacts
-# from src.database.connect import get_db
-# from src.database.model import User, Contact
-# from src.conf.config import settings
-# from src.services.auth import auth_service
-#
-
 from fastapi import APIRouter, HTTPException, Depends, status, File, UploadFile
 from fastapi.security import OAuth2PasswordRequestForm, HTTPAuthorizationCredentials, HTTPBearer
 from sqlalchemy.orm import Session
