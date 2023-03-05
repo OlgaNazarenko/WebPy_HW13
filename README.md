@@ -23,7 +23,7 @@ For this project was done the following:
 
 
 ### Part 2:
-Django project[^2]. Run the following command to start the server in folder *quotes*:
+Django project (created site using Django (similar to http://quotes.toscrape.com))[^2]. Run the following command to start the server in folder *quotes*:
 
       python3 (py) manage.py runserver
 
