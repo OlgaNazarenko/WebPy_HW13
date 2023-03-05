@@ -19,7 +19,7 @@ For this project was done the following:
 - all sensitive info is stored in the .env file[^3];
 - Docker Compose to run all services and databases in the application (Postgres and Redis):
 
-    docker-compose up
+      docker-compose up
 
 
 ### Part 2:
