@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Quotes with tag "{{ tag.name }}"</h2>
+  {% if quotes %}
+    <ul>
+      {% for quote in quotes %}
+        <li>{{ quote.quote }} - {{ quote.author.fullname }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No quotes found with tag "{{ tag }}".</p>
+  {% endif %}
+{% endblock %}

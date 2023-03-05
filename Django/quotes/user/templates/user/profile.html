@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div>
+    <h3>Profile: {{user.username}}</h3>
+  </div>
+
+    <h3>Quotes</h3>
+
+<hr>
+<form method="post">
+  {% csrf_token %}
+</form>
+{% endblock %}
