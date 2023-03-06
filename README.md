@@ -4,7 +4,7 @@ For this project it was used poetry, which is designed for dependency management
 allowed declaring the libraries of this project depends on and manages (install/update) them for you. Kindly activate it. 
 
 ### Part 1:
-REST API for storing and managing contacts [^1]. For the start need to start Docker through Docker Compose:
+REST API for storing and managing contacts [^1]. For the start need to start Docker through Docker Compose in order to initialize all services and databases used in this project, like Postgres and Redis:
 
     docker-compose up
 
@@ -24,7 +24,7 @@ For this project was done the following:
 
 
 ### Part 2:
-Django project (created site using Django, similar to http://quotes.toscrape.com) [^2]. For the start need to start Docker through Docker Compose:
+Django project (created site using Django, similar to http://quotes.toscrape.com) [^2]. For the start need to start Docker through Docker Compose in order to initialize Postgres, which was used as the main database in this project:
 
     docker-compose up
 
