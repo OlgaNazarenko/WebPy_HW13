@@ -16,12 +16,12 @@ class Contact(Base):
     email = Column(String(100), unique=True, index=True)
     mobile = Column(Integer, nullable=True)
     date_of_birth = Column(Date)
-    user_id = Column('user_id', ForeignKey('users.id',ondelete='CASCADE'), default=None)
+    user_id = Column('user_id', ForeignKey('user.id',ondelete='CASCADE'), default=None)
     user = relationship('User', backref='contacts')
 
 
 class User(Base):
-    __tablename__ = "users"
+    __tablename__ = "user"
     id = Column(Integer, primary_key=True)
     username = Column(String(50))
     email = Column(String(150), unique=True)

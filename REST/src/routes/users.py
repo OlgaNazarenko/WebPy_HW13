@@ -11,7 +11,7 @@ from src.repository import users as repository_users
 from src.services.auth import auth_service
 from src.conf.config import settings
 
-router = APIRouter(prefix='/users', tags=["users"])
+router = APIRouter(prefix='/user', tags=["user"])
 
 
 @router.get("/me", response_model=UserDb)

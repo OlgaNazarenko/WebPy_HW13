@@ -74,14 +74,14 @@ class Auth:
         except JWTError as e:
             raise credentials_exception
 
-        user = self.redis.get(f"user:{email}")
+        user = self.redis.get(f"users:{email}")
         if user is None:
             print('GET USER FROM POSTGRES')
             user = await repository_users.get_user_by_email(email, db)
             if user is None :
                 raise credentials_exception
-            self.redis.set(f"user:{email}", pickle.dumps(user))
-            self.redis.expire(f"user:{email}", 900)
+            self.redis.set(f"users:{email}", pickle.dumps(user))
+            self.redis.expire(f"users:{email}", 900)
         else:
             print('GET USER FROM CACHE')
             user = pickle.loads(user)
