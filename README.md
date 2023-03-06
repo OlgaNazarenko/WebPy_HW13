@@ -6,7 +6,7 @@ allowed declaring the libraries of this project depends on and manages (install/
 ### Part 1:
 REST API for storing and managing contacts [^1]. For the start need to start Docker through Docker Compose in order to initialize all services and databases used in this project, like Postgres and Redis:
 
-    docker-compose up
+      docker-compose up
 
 Then, run the following command to start the FastAPI server in folder **REST**:
 
@@ -26,7 +26,7 @@ For this project was done the following:
 ### Part 2:
 Django project (created site using Django, similar to http://quotes.toscrape.com) [^2]. For the start need to start Docker through Docker Compose in order to initialize Postgres, which was used as the main database in this project:
 
-    docker-compose up
+      docker-compose up
 
 Then, run the following command to start the server in folder **quotes**:
 
