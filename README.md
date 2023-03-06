@@ -27,7 +27,9 @@ Django project (created site using Django, similar to http://quotes.toscrape.com
 For this project was done the following:
 - added a password reset mechanism for a registered user; 
 - all environment variables are stored in the .env file and used in the settings.py file [^3]
+- Docker Compose to run the database in the application (Postgres):
 
+      docker-compose up
 
 [^1]: Login credentials -> Seoul@example.com
       password -> 123456
