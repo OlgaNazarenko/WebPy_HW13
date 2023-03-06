@@ -13,7 +13,7 @@ For this project was done the following:
 - added teh limit of requests to the contact routes along with the rate at which contacts are created:
 - CORS for your REST API;
 - the option to update the user's avatar. For this purpose was used the Cloudinary service;
-- all sensitive info is stored in the .env file[^3];
+- all sensitive info is stored in the .env file;
 - Docker Compose to run all services and databases in the application (Postgres and Redis):
 
       docker-compose up
@@ -26,7 +26,7 @@ Django project (created site using Django, similar to http://quotes.toscrape.com
 
 For this project was done the following:
 - added a password reset mechanism for a registered user; 
-- all environment variables are stored in the .env file and used in the settings.py file
+- all environment variables are stored in the .env file and used in the settings.py file [^3]
 
 
 [^1]: Login credentials -> Seoul@example.com
@@ -35,7 +35,8 @@ For this project was done the following:
 [^2]: Login -> Japan, 
       Password -> Seoul2023!
 
-[^3]: ```ini 
+[^3]: Example of .env file: 
+    ```ini 
     POSTGRES_DB=
     POSTGRES_USER=
     POSTGRES_PASSWORD=
