@@ -35,7 +35,7 @@ For this project was done the following:
 [^2]: Login -> Japan, 
       Password -> Seoul2023!
 
-[^3]: Example of .env file: 
+[^3]: The example of .env file is the following: 
     ```ini 
     POSTGRES_DB=
     POSTGRES_USER=
