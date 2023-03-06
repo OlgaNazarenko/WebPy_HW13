@@ -32,7 +32,7 @@ For this project was done the following:
 [^1]: Login credentials -> Seoul@example.com
       password -> 123456
 
-[^2]: Login -> Japan, 
+[^2]: Login credentials -> Japan, 
       Password -> Seoul2023!
 
 [^3]: The example of .env file is the following: 
