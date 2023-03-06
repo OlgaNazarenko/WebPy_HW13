@@ -35,7 +35,7 @@ For this project was done the following:
       password -> 123456
 
 [^2]: Login credentials -> Japan, 
-      Password -> Seoul2023!
+      Password -> Seoul2023
 
 [^3]: The example of .env file is the following: 
     ```ini 
