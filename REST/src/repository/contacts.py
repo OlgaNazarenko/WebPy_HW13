@@ -76,12 +76,13 @@ async def get_contacts_choice(name: str | None, surname: str | None,
 
 async def get_contacts_birthdays(user: User, db: Session):
     start_date = datetime.now().date()
-    end_date = start_date + timedelta(days = 7)
+    end_date = start_date + timedelta(days=7)
 
     params = {"start_date" : start_date.strftime("%m-%d") , "end_date" : end_date.strftime("%m-%d")}
 
     contacts = db.execute(
-        text("SELECT * FROM contacts WHERE strftime('%m-%d', date_of_birth) BETWEEN :start_date AND :end_date"),
+        text("SELECT * FROM contacts WHERE TO_CHAR(date_of_birth, 'MM-DD') BETWEEN :start_date AND :end_date "
+             "AND TO_CHAR(date_of_birth, 'MM-DD') <> :start_date"),
         params
     ).fetchall()
 

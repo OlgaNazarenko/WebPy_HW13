@@ -1,10 +1,7 @@
 ##  WebPy_HW13
 
 For this project it was used poetry, which is designed for dependency management and packaging in this project. It 
-allowed declaring the libraries of this project depends on and manages (install/update) them for you. To activate 
-the virtual environment, you need to run the command:
-
-      poetry shell
+allowed declaring the libraries of this project depends on and manages (install/update) them for you. Kindly activate it. 
 
 ### Part 1:
 REST API for storing and managing contacts [^1]. Run the following command to start the FastAPI server in folder **REST**:
@@ -23,7 +20,7 @@ For this project was done the following:
 
 
 ### Part 2:
-Django project (created site using Django (similar to http://quotes.toscrape.com)) [^2]. Run the following command to start the server in folder **quotes**:
+Django project (created site using Django, similar to http://quotes.toscrape.com) [^2]. Run the following command to start the server in folder **quotes**:
 
       python3 (py) manage.py runserver
 
@@ -38,7 +35,8 @@ For this project was done the following:
 [^2]: Login -> Japan, 
       Password -> Seoul2023!
 
-[^3]: POSTGRES_DB=
+[^3]: ```ini 
+    POSTGRES_DB=
     POSTGRES_USER=
     POSTGRES_PASSWORD=
     POSTGRES_PORT=
